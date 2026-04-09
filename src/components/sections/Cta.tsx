@@ -5,6 +5,7 @@ import { companyInfo } from '@/data/content';
 export default function Cta() {
   return (
     <section className="relative py-20 bg-predserv-teal overflow-hidden">
+      <div className="animate-gradient-pan absolute inset-0 bg-linear-to-r from-predserv-teal via-teal-600 to-predserv-teal opacity-70"></div>
       {/* Círculos decorativos no fundo */}
       <div className="animate-float-slow absolute top-1/2 left-0 -translate-y-1/2 w-96 h-96 bg-white opacity-5 rounded-full blur-3xl"></div>
       <div className="animate-float-slow absolute top-1/2 right-0 -translate-y-1/2 w-96 h-96 bg-predserv-yellow opacity-10 rounded-full blur-3xl"></div>
@@ -19,11 +20,11 @@ export default function Cta() {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href={companyInfo.whatsappLink} target="_blank" rel="noreferrer" className="animate-fade-up bg-predserv-yellow hover:bg-yellow-500 text-white px-8 py-4 rounded-md font-bold text-lg shadow-xl transition-all hover:-translate-y-1 flex items-center justify-center gap-2" style={{ animationDelay: '0.1s' }}>
+            <a href={companyInfo.whatsappLink} target="_blank" rel="noreferrer" className="animate-fade-up hover-glow-strong bg-predserv-yellow hover:bg-yellow-500 text-white px-8 py-4 rounded-md font-bold text-lg shadow-xl transition-all flex items-center justify-center gap-2" style={{ animationDelay: '0.1s' }}>
               <Phone className="h-5 w-5" />
               Chamar no WhatsApp
             </a>
-            <a href="#contato" className="animate-fade-up bg-transparent border-2 border-white hover:bg-white hover:text-predserv-teal text-white px-8 py-4 rounded-md font-bold text-lg transition-colors flex items-center justify-center gap-2" style={{ animationDelay: '0.18s' }}>
+            <a href="#contato" className="animate-fade-up hover-lift bg-transparent border-2 border-white hover:bg-white hover:text-predserv-teal text-white px-8 py-4 rounded-md font-bold text-lg transition-colors flex items-center justify-center gap-2" style={{ animationDelay: '0.18s' }}>
               Preencher Formulário
               <ArrowRight className="h-5 w-5" />
             </a>

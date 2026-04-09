@@ -43,9 +43,9 @@ export default function About() {
               ))}
             </ul>
 
-            <button className="bg-predserv-dark hover:bg-gray-800 text-white px-8 py-4 rounded-md font-bold transition-all hover:-translate-y-0.5 hover:shadow-lg">
+            <a href="#contato" className="inline-flex bg-predserv-dark hover:bg-gray-800 text-white px-8 py-4 rounded-md font-bold transition-all hover:-translate-y-0.5 hover:shadow-lg">
               Conheça Nossa História
-            </button>
+            </a>
           </div>
 
         </div>

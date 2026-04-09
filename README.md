@@ -1,36 +1,141 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Predserv | Site Institucional
 
-## Getting Started
+Site institucional desenvolvido para cliente, com foco em apresentacao de servicos, portfolio, prova social e captacao de contatos.
 
-First, run the development server:
+## Visao Geral
+
+Este projeto entrega uma landing page moderna para a Predserv Engenharia & Reformas Civis, com seccoes de:
+
+- Hero e proposta de valor
+- Sobre a empresa
+- Diferenciais
+- Servicos
+- Portfolio de obras
+- Fluxo de atendimento
+- Depoimentos
+- CTA e contato
+
+Objetivo principal:
+
+- transmitir credibilidade
+- facilitar solicitacao de orcamento
+- manter manutencao simples para futuras atualizacoes
+
+## Stack Tecnica
+
+- Next.js 16 (App Router)
+- React 19
+- TypeScript
+- Tailwind CSS 4
+- Lucide React (icones)
+- Deploy recomendado em Vercel
+
+## Estrutura do Projeto
+
+```text
+src/
+	app/
+		globals.css
+		layout.tsx
+		page.tsx
+	components/
+		layout/
+			Header.tsx
+			Footer.tsx
+		sections/
+			Hero.tsx
+			About.tsx
+			Features.tsx
+			Services.tsx
+			Portfolio.tsx
+			Workflow.tsx
+			Testimonials.tsx
+			Cta.tsx
+			Contact.tsx
+	data/
+		content.ts
+```
+
+Ponto importante de manutencao:
+
+- todo o conteudo principal (textos, contatos, cards, servicos, depoimentos) fica centralizado em `src/data/content.ts`.
+
+## Branding e Identidade
+
+Paleta base definida em `src/app/globals.css`:
+
+- `predserv-teal`: cor principal da marca
+- `predserv-yellow`: cor de destaque
+- `predserv-dark`: texto/contraste
+
+Logo textual no header:
+
+- Casa + `Pred` (verde) + `serv` (amarelo) + Martelo
+
+## Como Rodar Localmente
+
+Pre-requisitos:
+
+- Node.js 20+
+- npm 10+
+
+Instalacao:
+
+```bash
+npm install
+```
+
+Ambiente de desenvolvimento:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Build de producao:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run build
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Subir build localmente:
 
-## Learn More
+```bash
+npm run start
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Scripts Disponiveis
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `npm run dev`: inicia ambiente de desenvolvimento
+- `npm run build`: gera build de producao
+- `npm run start`: executa build gerada
+- `npm run lint`: executa validacao de lint
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Fluxo de Atualizacao de Conteudo
 
-## Deploy on Vercel
+Para alteracoes rapidas sem mexer em layout:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. editar `src/data/content.ts`
+2. revisar em `npm run dev`
+3. gerar build com `npm run build`
+4. publicar
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Deploy
+
+Deploy em Vercel conectado ao branch principal.
+
+Checklist antes de publicar:
+
+1. `npm install`
+2. `npm run lint`
+3. `npm run build`
+4. confirmar dados de contato em `src/data/content.ts`
+
+## Observacoes para Entrega ao Cliente
+
+- Projeto preparado para crescimento por blocos (novas seccoes podem ser adicionadas em `src/components/sections`).
+- Estrutura orientada para manutencao por conteudo centralizado.
+- Visual e copy voltados para conversao de leads (orcamento e contato).
+
+## Licenca
+
+Uso privado para o cliente Predserv. Ajuste conforme contrato comercial.

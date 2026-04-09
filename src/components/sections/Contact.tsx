@@ -52,7 +52,7 @@ export default function Contact() {
 
           {/* Formulário */}
           <div className="animate-fade-up" style={{ animationDelay: '0.15s' }}>
-            <form className="bg-gray-50 p-8 md:p-10 rounded-2xl shadow-sm border border-gray-100 space-y-6">
+            <form className="hover-glow bg-gray-50 p-8 md:p-10 rounded-2xl shadow-sm border border-gray-100 space-y-6 transition-shadow duration-300">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">Nome Completo *</label>
@@ -80,7 +80,7 @@ export default function Contact() {
                 <textarea rows={4} className="w-full px-5 py-4 bg-white border border-gray-200 rounded-lg focus:ring-2 focus:ring-predserv-teal outline-none transition-all resize-none" placeholder="Conte-nos um pouco sobre a sua necessidade..."></textarea>
               </div>
 
-              <button type="submit" className="w-full bg-predserv-dark hover:bg-gray-800 text-white px-6 py-4 rounded-lg font-bold text-lg shadow-md transition-colors">
+              <button type="submit" className="hover-lift w-full bg-predserv-dark hover:bg-gray-800 text-white px-6 py-4 rounded-lg font-bold text-lg shadow-md transition-colors">
                 Enviar Mensagem
               </button>
             </form>

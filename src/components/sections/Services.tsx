@@ -21,13 +21,13 @@ export default function Services() {
             return (
               <div 
                 key={index}
-                className="animate-fade-up bg-white p-10 rounded-2xl shadow-sm border border-gray-100 hover:-translate-y-2 hover:shadow-xl transition-all duration-300 group relative overflow-hidden"
+                className="animate-fade-up hover-glow-strong bg-white p-10 rounded-2xl shadow-sm border border-gray-100 transition-all duration-300 group relative overflow-hidden"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <div className="absolute top-0 right-0 w-24 h-24 bg-gray-50 rounded-bl-full group-hover:bg-predserv-teal transition-colors duration-300"></div>
                 
                 <div className="w-16 h-16 bg-gray-50 rounded-xl flex items-center justify-center mb-8 relative z-10 group-hover:bg-predserv-teal transition-colors duration-300">
-                  <Icon className="h-8 w-8 text-predserv-teal group-hover:text-white transition-colors duration-300" />
+                  <Icon className="h-8 w-8 text-predserv-teal group-hover:text-white group-hover:animate-icon-bob transition-colors duration-300" />
                 </div>
                 
                 <h4 className="text-2xl font-extrabold mb-4 text-predserv-dark tracking-tight relative z-10">{service.title}</h4>

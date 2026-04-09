@@ -17,7 +17,7 @@ export default function Testimonials() {
           {testimonialsList.map((testimonial, index) => (
             <div 
               key={index}
-              className="animate-fade-up bg-white p-10 rounded-2xl shadow-sm border border-gray-100 relative"
+              className="animate-fade-up hover-lift hover-glow bg-white p-10 rounded-2xl shadow-sm border border-gray-100 relative"
               style={{ animationDelay: `${index * 0.12}s` }}
             >
               <Quote className="absolute top-8 right-8 h-12 w-12 text-gray-100" />
