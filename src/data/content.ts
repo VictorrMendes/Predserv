@@ -59,7 +59,7 @@ export const projectsList: ProjectData[] = [
   { title: "Reforma Corporativa Premium", category: "Drywall e Acabamento", imageUrl: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80" },
   { title: "Modernização de Fachada", category: "Estruturas Metálicas", imageUrl: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80" },
   { title: "Apartamento Alto Padrão", category: "Pisos e Revestimentos", imageUrl: "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80" },
-  { title: "Instalação Industrial", category: "Hidráulica e Alvenaria", imageUrl: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=800&q=80" },
+  { title: "Instalação Industrial", category: "Hidráulica e Alvenaria", imageUrl: "https://media.istockphoto.com/id/2222477546/pt/foto/growth-concept-construction-worker-with-safety-helmet-and-progress-graph-illustrating-growth.jpg?s=2048x2048&w=is&k=20&c=ndUiq5FIKk0ft_6g1c9kzLRfjE1PPQjdZDoAXKgBlQk=" },
   { title: "Projeto Cozinha Planejada", category: "Reforma Completa", imageUrl: "https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=800&q=80" },
   { title: "Prédio Comercial", category: "Pintura e Fachada", imageUrl: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80" }
 ];
@@ -102,8 +102,8 @@ export const footerLinks = {
     { label: "Estruturas Metálicas", href: "#servicos" } 
   ],
   social: [ 
-    { icon: Camera, href: "#" },    // Câmera no lugar do Instagram
-    { icon: Users, href: "#" },     // Usuários no lugar do Facebook
-    { icon: Briefcase, href: "#" }  // Maleta no lugar do LinkedIn
+    { icon: Camera, href: "#" },   
+    { icon: Users, href: "#" },     
+    { icon: Briefcase, href: "#" } 
   ]
 };
