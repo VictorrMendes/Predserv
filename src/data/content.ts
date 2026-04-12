@@ -28,7 +28,7 @@ export interface ProjectData { title: string; category: string; imageUrl: string
 export const companyInfo = {
   name: "Predserv Engenharia & Reformas Civis",
   phone: "(31) 9 9492-4044",
-  whatsappLink: "https://wa.me/5531994924044",
+  whatsappLink: "https://wa.me/553194924044",
   email: "Comercial@predserv.com.br",
 
 };

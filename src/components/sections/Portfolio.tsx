@@ -36,20 +36,20 @@ export default function Portfolio() {
                 <img 
                   src={project.imageUrl} 
                   alt={project.title} 
-                  className="w-full h-full object-contain transition-transform duration-700 group-hover:scale-110"
+                  className="w-full h-full object-contain transition-transform duration-700 md:group-hover:scale-110"
                 />
               </div>
               
-              {/* Overlay Escuro que aparece no Hover */}
-              <div className="absolute inset-0 bg-linear-to-t from-predserv-dark/90 via-predserv-dark/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-8">
+              {/* Overlay Escuro: Sempre visível no mobile (opacity-100), e hover no desktop (md:opacity-0 md:group-hover:opacity-100) */}
+              <div className="absolute inset-0 bg-gradient-to-t from-predserv-dark/90 via-predserv-dark/40 to-transparent opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-8">
                 
-                {/* Ícone flutuante */}
-                <div className="absolute top-6 right-6 bg-predserv-yellow w-12 h-12 rounded-full flex items-center justify-center translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 delay-100">
+                {/* Ícone flutuante: Sem animação no mobile, animado no desktop */}
+                <div className="absolute top-6 right-6 bg-predserv-yellow w-12 h-12 rounded-full flex items-center justify-center opacity-100 translate-y-0 md:opacity-0 md:translate-y-4 md:group-hover:translate-y-0 md:group-hover:opacity-100 transition-all duration-500 delay-100">
                   <Plus className="h-6 w-6 text-white" />
                 </div>
 
-                {/* Textos */}
-                <div className="translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                {/* Textos: Fixos no mobile, deslizam para cima no desktop */}
+                <div className="translate-y-0 md:translate-y-4 md:group-hover:translate-y-0 transition-transform duration-500">
                   <span className="text-predserv-yellow font-semibold text-sm uppercase tracking-wider mb-2 block">
                     {project.category}
                   </span>
