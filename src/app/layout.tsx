@@ -1,24 +1,29 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import "./globals.css"; 
 
 export const metadata: Metadata = {
-  title: "Predserv - Soluções de Manutenção Predial",
-  description: "Especialistas em manutenção predial, reformas e engenharia de alto padrão. Transformamos espaços com qualidade, segurança e inovação. Conheça nossos serviços e portfólio de obras.",
-  icons: {
-    icon: "/logo.png",
-    shortcut: "/logo.png",
-    apple: "/logo.png",
+  title: "Predserv | Engenharia & Reformas Civis de Alto Padrão",
+  description: "A Predserv oferece soluções completas em engenharia, reformas civis, drywall, pintura e estruturas metálicas. Obras com qualidade, no prazo e sem surpresas.",
+  keywords: ["Predserv", "Engenharia", "Reformas Civis", "Construção", "Drywall", "Pintura Profissional", "Estruturas Metálicas", "Juatuba", "Minas Gerais", "Obras Corporativas", "Manutenção de Ativos"],
+  authors: [{ name: "Predserv Engenharia" }],
+  openGraph: {
+    title: "Predserv | Engenharia & Reformas",
+    description: "Soluções completas em engenharia e reformas civis com excelência e precisão.",
+    url: "https://www.predservengenharia.com.br",
+    siteName: "Predserv Engenharia",
+    locale: "pt_BR",
+    type: "website",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
 };
 
@@ -28,11 +33,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col">{children}</body>
+    <html lang="pt-BR" className="scroll-smooth" suppressHydrationWarning>
+      <body className="antialiased bg-gray-50 text-gray-900" suppressHydrationWarning>
+        {children}
+      </body>
     </html>
   );
 }
