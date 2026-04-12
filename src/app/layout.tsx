@@ -15,6 +15,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Predserv - Soluções de Manutenção Predial",
   description: "Especialistas em manutenção predial, reformas e engenharia de alto padrão. Transformamos espaços com qualidade, segurança e inovação. Conheça nossos serviços e portfólio de obras.",
+  icons: {
+    icon: "/logo.png",
+    shortcut: "/logo.png",
+    apple: "/logo.png",
+  },
 };
 
 export default function RootLayout({

@@ -28,18 +28,20 @@ export default function Portfolio() {
           {projectsList.map((project, index) => (
             <div 
               key={index}
-              className="animate-fade-up group relative h-80 cursor-pointer overflow-hidden rounded-2xl shadow-md"
+              className="animate-fade-up group relative h-80 cursor-pointer overflow-hidden rounded-2xl shadow-md border border-gray-100 bg-gray-50"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              {/* Imagem de Fundo (Usando a tag <img> nativa para evitar configuração imediata do Next.js Image) */}
-              <img 
-                src={project.imageUrl} 
-                alt={project.title} 
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-              />
+              {/* Container da Imagem com ajuste para não cortar (object-contain) */}
+              <div className="w-full h-full flex items-center justify-center p-4">
+                <img 
+                  src={project.imageUrl} 
+                  alt={project.title} 
+                  className="w-full h-full object-contain transition-transform duration-700 group-hover:scale-110"
+                />
+              </div>
               
               {/* Overlay Escuro que aparece no Hover */}
-              <div className="absolute inset-0 bg-gradient-to-t from-predserv-dark/90 via-predserv-dark/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-8">
+              <div className="absolute inset-0 bg-linear-to-t from-predserv-dark/90 via-predserv-dark/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-8">
                 
                 {/* Ícone flutuante */}
                 <div className="absolute top-6 right-6 bg-predserv-yellow w-12 h-12 rounded-full flex items-center justify-center translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 delay-100">

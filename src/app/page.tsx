@@ -21,9 +21,7 @@ export default function Home() {
         <Features />
         <Services />
         <Portfolio />
-        <Workflow />
         <Testimonials />
-        <Cta />
         <Contact />
       </main>
       <Footer />

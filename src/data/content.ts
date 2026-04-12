@@ -13,10 +13,6 @@ import {
   ClipboardSignature,
   Calculator,
   Trophy,
-  Star,
-  Quote,
-  MapPin,
-  Mail,
   // Trocamos as marcas por ícones genéricos de interface
   Camera,
   Users,
@@ -31,10 +27,10 @@ export interface ProjectData { title: string; category: string; imageUrl: string
 // --- DADOS GLOBAIS DA EMPRESA ---
 export const companyInfo = {
   name: "Predserv Engenharia & Reformas Civis",
-  phone: "(11) 99999-9999",
-  whatsappLink: "https://wa.me/5511999999999",
-  email: "contato@predserv.com",
-  address: "Rua Exemplo, 123 - Centro, São Paulo - SP",
+  phone: "(31) 9 9492-4044",
+  whatsappLink: "https://wa.me/55319994924044",
+  email: "Comercial@predserv.com.br",
+
 };
 
 // --- DIFERENCIAIS (FEATURES) ---
@@ -56,12 +52,12 @@ export const servicesList: ServiceData[] = [
 
 // --- DADOS DO PORTFÓLIO ---
 export const projectsList: ProjectData[] = [
-  { title: "Reforma Corporativa Premium", category: "Drywall e Acabamento", imageUrl: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80" },
+  { title: "Reforma Corporativa Premium", category: "Drywall e Acabamento", imageUrl: "/imagens/quarto.png" },
   { title: "Modernização de Fachada", category: "Estruturas Metálicas", imageUrl: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80" },
-  { title: "Apartamento Alto Padrão", category: "Pisos e Revestimentos", imageUrl: "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80" },
-  { title: "Instalação Industrial", category: "Hidráulica e Alvenaria", imageUrl: "https://media.istockphoto.com/id/2222477546/pt/foto/growth-concept-construction-worker-with-safety-helmet-and-progress-graph-illustrating-growth.jpg?s=2048x2048&w=is&k=20&c=ndUiq5FIKk0ft_6g1c9kzLRfjE1PPQjdZDoAXKgBlQk=" },
+  { title: "Apartamento Alto Padrão", category: "Pisos e Revestimentos", imageUrl: "/imagens/banheiro.jpg" },
+  { title: "Instalação Residencial", category: "Hidráulica e Alvenaria", imageUrl: "/imagens/pia.png" },
   { title: "Projeto Cozinha Planejada", category: "Reforma Completa", imageUrl: "https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=800&q=80" },
-  { title: "Prédio Comercial", category: "Pintura e Fachada", imageUrl: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80" }
+  { title: "Reforma de Geral", category: "Pintura e Acabamentos", imageUrl: "/imagens/reforma.png" }
 ];
 
 // --- DADOS DO SOBRE ---
@@ -70,7 +66,7 @@ export const aboutData = {
   headline: "Transformamos projetos em resultados com precisão e excelência.",
   description: "Com anos de experiência no mercado de engenharia e reformas civil, a Predserv nasceu da necessidade de entregar obras que respeitam o prazo, o orçamento e a paz de espírito do cliente. Atendemos desde revitalizações comerciais até reformas residenciais de alto padrão.",
   topics: [ "Experiência comprovada em obras de todos os portes.", "Foco em segurança e normas técnicas.", "Transparência total do início ao fim do projeto." ],
-  imageUrl: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=2071&auto=format&fit=crop"
+  imageUrl: "/imagens/logo.png"
 };
 
 // --- DADOS DO PROCESSO DE TRABALHO ---

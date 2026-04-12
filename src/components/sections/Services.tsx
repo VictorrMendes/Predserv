@@ -1,5 +1,4 @@
 import React from 'react';
-import { ChevronRight } from 'lucide-react';
 import { servicesList } from '@/data/content';
 
 export default function Services() {
@@ -11,7 +10,7 @@ export default function Services() {
           <h2 className="text-predserv-teal font-bold uppercase tracking-wider text-sm mb-3">Nossas Especialidades</h2>
           <h3 className="text-5xl font-extrabold text-predserv-dark mb-6 tracking-tighter">Engenharia e Acabamento de Alto Padrão</h3>
           <p className="text-gray-600 text-xl leading-relaxed">
-            Combinamos técnicas construtivas modernas com materiais de rigorosa qualidade para entregar obras seguras e duráveis.
+            Combinamos técnicas construtivas modernas com materiais de qualidade para entregar obras seguras e duráveis.
           </p>
         </div>
 
@@ -32,10 +31,7 @@ export default function Services() {
                 
                 <h4 className="text-2xl font-extrabold mb-4 text-predserv-dark tracking-tight relative z-10">{service.title}</h4>
                 <p className="text-gray-600 leading-relaxed text-md relative z-10">{service.description}</p>
-                
-                <div className="mt-8 flex items-center gap-2 text-predserv-teal font-bold cursor-pointer relative z-10">
-                    Saiba Mais <ChevronRight className="h-4 w-4 group-hover:translate-x-2 transition-transform"/>
-                </div>
+
               </div>
             );
           })}

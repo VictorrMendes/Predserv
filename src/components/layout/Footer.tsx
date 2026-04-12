@@ -69,7 +69,6 @@ export default function Footer() {
             <ul className="space-y-3 text-sm">
               <li><span className="text-gray-500 block">WhatsApp:</span> <a href={companyInfo.whatsappLink} className="hover:text-predserv-yellow transition-colors font-medium text-white">{companyInfo.phone}</a></li>
               <li><span className="text-gray-500 block">E-mail:</span> <a href={`mailto:${companyInfo.email}`} className="hover:text-predserv-yellow transition-colors">{companyInfo.email}</a></li>
-              <li><span className="text-gray-500 block">Endereço:</span> {companyInfo.address}</li>
             </ul>
           </div>
 
