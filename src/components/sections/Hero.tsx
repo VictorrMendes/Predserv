@@ -4,7 +4,7 @@ import { companyInfo } from '@/data/content';
 
 export default function Hero() {
   return (
-    <section className="relative bg-predserv-dark text-white pt-24 pb-36 overflow-hidden">
+    <section id="home" className="relative bg-predserv-dark text-white pt-24 pb-36 overflow-hidden">
       
       <style dangerouslySetInnerHTML={{__html: `
         @keyframes pan-grid {

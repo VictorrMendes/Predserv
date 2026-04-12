@@ -3,14 +3,20 @@ import { ChevronRight, Menu, X, Home, Hammer } from 'lucide-react';
 import { companyInfo } from '@/data/content';
 
 export default function Header() {
-  const navItems = ["Início", "Sobre", "Serviços", "Projetos", "Contato"];
+  const navItems = [
+    { label: "Início", href: "#home" },
+    { label: "Sobre", href: "#sobre" },
+    { label: "Serviços", href: "#servicos" },
+    { label: "Projetos", href: "#projetos" },
+    { label: "Contato", href: "#contato" },
+  ];
 
   return (
     <>
     <header className="animate-fade-in sticky top-0 z-50 border-b border-gray-100 bg-white/95 shadow-sm backdrop-blur-sm">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-20 items-center justify-between">
-          <a href="#topo" className="group flex items-center gap-2 hover-lift">
+          <a href="#home" className="group flex items-center gap-2 hover-lift">
             <Home className="h-7 w-7 text-predserv-teal transition-transform duration-300 group-hover:-rotate-6" />
             <div className="flex items-center gap-1 font-bold text-2xl tracking-tighter">
               <span className="text-predserv-teal">Pred</span>
@@ -23,8 +29,8 @@ export default function Header() {
 
           <nav className="hidden md:flex space-x-8">
             {navItems.map((item) => (
-              <a key={item} href={`#${item.toLowerCase()}`} className="relative font-medium text-gray-600 transition-colors hover:text-predserv-teal group">
-                {item}
+              <a key={item.label} href={item.href} className="relative font-medium text-gray-600 transition-colors hover:text-predserv-teal group">
+                {item.label}
                 <span className="absolute -bottom-1 left-0 h-0.5 w-0 bg-predserv-teal transition-all group-hover:w-full"></span>
               </a>
             ))}
@@ -64,8 +70,8 @@ export default function Header() {
                 </div>
                 <nav className="flex flex-col gap-4">
                   {navItems.map((item, index) => (
-                    <a key={item} href={`#${item.toLowerCase()}`} className="animate-fade-up border-b border-gray-100 pb-2 text-lg font-medium text-gray-700 transition-colors hover:text-predserv-teal" style={{ animationDelay: `${index * 0.06}s` }}>
-                      {item}
+                    <a key={item.label} href={item.href} className="animate-fade-up border-b border-gray-100 pb-2 text-lg font-medium text-gray-700 transition-colors hover:text-predserv-teal" style={{ animationDelay: `${index * 0.06}s` }}>
+                      {item.label}
                     </a>
                   ))}
                 </nav>

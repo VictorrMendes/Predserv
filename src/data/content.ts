@@ -92,4 +92,4 @@ export const footerLinks = {
     { icon: Users, href: "#" },     
     { icon: Briefcase, href: "#" } 
   ]
-};
+}; 
