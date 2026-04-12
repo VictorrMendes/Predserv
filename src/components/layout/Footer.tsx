@@ -71,7 +71,7 @@ export default function Footer() {
 
         <div className="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500">
           <p>© {currentYear} {companyInfo.name}. Todos os direitos reservados.</p>
-          <p>CNPJ: 00.000.000/0001-00</p>
+          <p>CNPJ: 53.217.192/0001-59</p>
         </div>
       </div>
     </footer>
