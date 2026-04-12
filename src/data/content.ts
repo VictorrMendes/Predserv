@@ -47,7 +47,7 @@ export const servicesList: ServiceData[] = [
 
 export const projectsList: ProjectData[] = [
   { title: "Reforma Corporativa Premium", category: "Drywall e Acabamento", imageUrl: "/imagens/quarto.png" },
-  { title: "Modernização de Fachada", category: "Estruturas Metálicas", imageUrl: "/imagens/varanda.png" },
+  { title: "Modernização de Fachada", category: "Estruturas Modernas", imageUrl: "/imagens/varanda.png" },
   { title: "Apartamento Alto Padrão", category: "Pisos e Revestimentos", imageUrl: "/imagens/banheiro.jpg" },
   { title: "Instalação Residencial", category: "Hidráulica e Alvenaria", imageUrl: "/imagens/pia.png" },
   { title: "Projeto Cozinha Planejada", category: "Reforma Completa", imageUrl: "https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=800&q=80" },
