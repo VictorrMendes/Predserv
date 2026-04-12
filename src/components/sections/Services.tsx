@@ -32,7 +32,7 @@ export default function Services() {
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-50px" }}
-                transition={{ duration: 0.5, delay: index * 0.1 }} // Efeito cascata
+                transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="bg-white p-5 md:p-10 rounded-2xl shadow-sm border border-gray-100 transition-all duration-300 group relative overflow-hidden flex flex-col hover:-translate-y-2 hover:shadow-xl"
               >
                 <div className="absolute top-0 right-0 w-16 h-16 md:w-24 md:h-24 bg-gray-50 rounded-bl-full group-hover:bg-predserv-teal transition-colors duration-500 ease-out"></div>

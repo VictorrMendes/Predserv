@@ -6,7 +6,6 @@ export default function Cta() {
   return (
     <section className="relative py-20 bg-predserv-teal overflow-hidden">
       <div className="animate-gradient-pan absolute inset-0 bg-linear-to-r from-predserv-teal via-teal-600 to-predserv-teal opacity-70"></div>
-      {/* Círculos decorativos no fundo */}
       <div className="animate-float-slow absolute top-1/2 left-0 -translate-y-1/2 w-96 h-96 bg-white opacity-5 rounded-full blur-3xl"></div>
       <div className="animate-float-slow absolute top-1/2 right-0 -translate-y-1/2 w-96 h-96 bg-predserv-yellow opacity-10 rounded-full blur-3xl"></div>
 

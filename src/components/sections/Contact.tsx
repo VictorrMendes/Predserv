@@ -51,7 +51,6 @@ export default function Contact() {
         
         <div className="grid md:grid-cols-2 gap-16">
           
-          {/* Informações de Contato */}
           <div className="animate-fade-up" style={{ animationDelay: '0.05s' }}>
             <h2 className="text-predserv-teal font-bold uppercase tracking-wider text-sm mb-3">Fale Conosco</h2>
             <h3 className="text-4xl font-extrabold text-predserv-dark mb-6 tracking-tighter">Vamos Planejar Sua Próxima Obra?</h3>
@@ -84,7 +83,6 @@ export default function Contact() {
             </div>
           </div>
 
-          {/* Formulário */}
           <div className="animate-fade-up" style={{ animationDelay: '0.15s' }}>
             <form onSubmit={handleSubmit} className="hover-glow bg-gray-50 p-8 md:p-10 rounded-2xl shadow-sm border border-gray-100 space-y-6 transition-shadow duration-300">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

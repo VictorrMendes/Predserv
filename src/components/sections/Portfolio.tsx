@@ -10,7 +10,6 @@ export default function Portfolio() {
     <section id="projetos" className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* Cabeçalho da Seção */}
         <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
           <motion.div 
             initial={{ opacity: 0, y: 30 }} 
@@ -35,7 +34,6 @@ export default function Portfolio() {
           </motion.div>
         </div>
 
-        {/* Grid de Imagens com Animação Staggered */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projectsList.map((project, index) => (
             <motion.div 

@@ -13,18 +13,15 @@ import {
   ClipboardSignature,
   Calculator,
   Trophy,
-  // Trocamos as marcas por ícones genéricos de interface
   Camera,
   Users,
   Briefcase
 } from 'lucide-react';
 
-// --- TIPAGENS ---
 export interface ServiceData { title: string; description: string; icon: LucideIcon; }
 export interface FeatureData { title: string; description: string; icon: LucideIcon; }
 export interface ProjectData { title: string; category: string; imageUrl: string; }
 
-// --- DADOS GLOBAIS DA EMPRESA ---
 export const companyInfo = {
   name: "Predserv Engenharia & Reformas Civis",
   phone: "(31) 9 9492-4044",
@@ -33,14 +30,12 @@ export const companyInfo = {
 
 };
 
-// --- DIFERENCIAIS (FEATURES) ---
 export const featuresList: FeatureData[] = [
   { title: "Profissionais Qualificados", description: "Nossa equipe é formada por especialistas experientes, treinados para entregar precisão técnica em cada etapa da sua obra.", icon: HardHat, },
   { title: "Entrega no Prazo", description: "Levamos seu cronograma a sério. Utilizamos planejamento rigoroso para garantir que sua reforma seja concluída na data combinada, sem surpresas.", icon: CalendarDays, },
   { title: "Qualidade Garantida", description: "Utilizamos materiais de primeira linha e técnicas modernas para assegurar um acabamento impecável e a durabilidade que sua estrutura merece.", icon: CheckCircle, }
 ];
 
-// --- LISTA DE SERVIÇOS ---
 export const servicesList: ServiceData[] = [
   { title: "Drywall e Rebaixamento", description: "Transforme ambientes com agilidade. Executamos divisórias e forros de gesso com precisão milimétrica e acabamento pronto para pintura.", icon: Layers3, },
   { title: "Pintura Profissional", description: "Aplicação técnica de tintas e texturas com preparo completo da superfície, garantindo uniformidade e vivacidade das cores.", icon: Paintbrush, },
@@ -50,7 +45,6 @@ export const servicesList: ServiceData[] = [
   { title: "Instalações Hidráulicas", description: "Soluções completas para redes de água e esgoto, prevenindo vazamentos e garantindo a funcionalidade de louças e metais.", icon: Droplets, }
 ];
 
-// --- DADOS DO PORTFÓLIO ---
 export const projectsList: ProjectData[] = [
   { title: "Reforma Corporativa Premium", category: "Drywall e Acabamento", imageUrl: "/imagens/quarto.png" },
   { title: "Modernização de Fachada", category: "Estruturas Metálicas", imageUrl: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80" },
@@ -60,7 +54,6 @@ export const projectsList: ProjectData[] = [
   { title: "Reforma em Geral", category: "Pintura e Acabamentos", imageUrl: "/imagens/reforma.png" }
 ];
 
-// --- DADOS DO SOBRE ---
 export const aboutData = {
   title: "Sobre a Predserv",
   headline: "Transformamos projetos em resultados com precisão e excelência.",
@@ -69,7 +62,6 @@ export const aboutData = {
   imageUrl: "/imagens/logo.png"
 };
 
-// --- DADOS DO PROCESSO DE TRABALHO ---
 export const workflowList = [
   { step: "01", title: "Contato Inicial", description: "Você nos conta sua necessidade e agendamos uma visita técnica sem compromisso.", icon: PhoneCall, },
   { step: "02", title: "Análise Técnica", description: "Nossos especialistas avaliam o local e definem as melhores soluções estruturais.", icon: ClipboardSignature, },
@@ -78,14 +70,12 @@ export const workflowList = [
   { step: "05", title: "Entrega e Garantia", description: "Revisão final com o cliente, entrega das chaves e garantia de qualidade Predserv.", icon: Trophy, }
 ];
 
-// --- DADOS DOS DEPOIMENTOS ---
 export const testimonialsList = [
   { name: "Carlos Eduardo", role: "Síndico Profissional", content: "A Predserv cuidou da reforma da fachada do nosso condomínio. A equipe foi extremamente pontual, limpa e o resultado valorizou o prédio instantaneamente.", },
   { name: "Mariana Silva", role: "Proprietária de Clínica", content: "Fizemos a readequação completa do nosso espaço com drywall e pintura. O nível de detalhe e o respeito ao prazo nos impressionaram muito.", },
   { name: "Roberto Mendes", role: "Empresário", content: "O que mais gostei foi a transparência no orçamento. Sem surpresas no final da obra. A estrutura metálica ficou perfeita.", }
 ];
 
-// --- DADOS DO FOOTER (LINKS) ---
 export const footerLinks = {
   company: [ 
     { label: "Sobre Nós", href: "#sobre" }, 

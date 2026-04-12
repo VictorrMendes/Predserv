@@ -6,7 +6,6 @@ export default function Hero() {
   return (
     <section className="relative bg-predserv-dark text-white pt-24 pb-36 overflow-hidden">
       
-      {/* Estilos CSS Customizados para as novas animações do Background */}
       <style dangerouslySetInnerHTML={{__html: `
         @keyframes pan-grid {
           0% { transform: translateY(0) }
@@ -28,23 +27,18 @@ export default function Hero() {
         }
       `}} />
 
-      {/* 1. Imagem de Fundo com Zoom Lento (Ken Burns) */}
       <div className="absolute inset-0 overflow-hidden opacity-15 mix-blend-overlay">
         <div className="animate-slow-zoom absolute inset-0 bg-[url('https://images.unsplash.com/photo-1541888086425-d81bb19240f5?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center w-full h-full" />
       </div>
 
-      {/* 2. Grid Arquitetônico Animado (Deslizando infinitamente) */}
-      <div className="absolute inset-0 -top-[50px] w-full h-[calc(100%+50px)] animate-bg-grid pointer-events-none mix-blend-overlay" />
+      <div className="absolute inset-0 -top-12.5 w-full h-[calc(100%+50px)] animate-bg-grid pointer-events-none mix-blend-overlay" />
 
-      {/* 3. Gradientes e Orbs Originais (Mantidos) */}
-      <div className="animate-gradient-pan absolute inset-0 bg-gradient-to-r from-predserv-teal/10 via-transparent to-predserv-yellow/10 pointer-events-none" />
+      <div className="animate-gradient-pan absolute inset-0 bg-linear-to-r from-predserv-teal/10 via-transparent to-predserv-yellow/10 pointer-events-none" />
       <div className="animate-float-slow absolute -left-24 top-24 h-72 w-72 rounded-full bg-predserv-teal/10 blur-3xl pointer-events-none" />
       <div className="animate-float-slow absolute -right-24 bottom-0 h-72 w-72 rounded-full bg-predserv-yellow/10 blur-3xl pointer-events-none" />
       
-      {/* Camada de Gradiente Escuro na Base para fundir com a próxima seção */}
-      <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-predserv-dark to-transparent pointer-events-none z-0" />
+      <div className="absolute bottom-0 left-0 w-full h-32 bg-linear-to-t from-predserv-dark to-transparent pointer-events-none z-0" />
 
-      {/* CONTEÚDO PRINCIPAL (Z-INDEX SUPERIOR) */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid md:grid-cols-2 gap-16 items-center">
           

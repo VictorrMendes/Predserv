@@ -11,7 +11,6 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           
-          {/* Logo e Sobre */}
           <div className="animate-fade-up col-span-1 lg:col-span-1" style={{ animationDelay: footerAnimationDelay[0] }}>
             <div className="group flex items-center gap-2 mb-6 hover-lift">
               <Home className="h-7 w-7 text-predserv-teal transition-transform duration-300 group-hover:-rotate-6" />
@@ -26,7 +25,6 @@ export default function Footer() {
             <p className="text-gray-400 mb-6 text-sm leading-relaxed">
               Soluções completas em engenharia e reformas civis. Qualidade, prazo e segurança para o seu projeto comercial ou residencial.
             </p>
-            {/* Redes Sociais */}
             <div className="flex gap-4">
               {footerLinks.social.map((social, index) => {
                 const Icon = social.icon;
@@ -39,7 +37,6 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Links Rápidos */}
           <div className="animate-fade-up" style={{ animationDelay: footerAnimationDelay[1] }}>
             <h4 className="text-white font-bold text-lg mb-6">Institucional</h4>
             <ul className="space-y-3">
@@ -51,7 +48,6 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Serviços */}
           <div className="animate-fade-up" style={{ animationDelay: footerAnimationDelay[2] }}>
             <h4 className="text-white font-bold text-lg mb-6">Nossos Serviços</h4>
             <ul className="space-y-3">
@@ -63,7 +59,6 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Contato Direto */}
           <div className="animate-fade-up" style={{ animationDelay: footerAnimationDelay[3] }}>
             <h4 className="text-white font-bold text-lg mb-6">Contato</h4>
             <ul className="space-y-3 text-sm">
@@ -74,7 +69,6 @@ export default function Footer() {
 
         </div>
 
-        {/* Direitos Autorais */}
         <div className="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500">
           <p>© {currentYear} {companyInfo.name}. Todos os direitos reservados.</p>
           <p>CNPJ: 00.000.000/0001-00</p>
